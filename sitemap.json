@@ -1,0 +1,49 @@
+{
+    "global": {
+        "webviewParameter": {
+            "titleNView": {
+                "autoBackButton": true,
+                "backgroundColor": "#f7f7f7",//导航栏背景色
+                "titleColor": "#000000",//标题颜色
+                "titleSize": "17px",
+                "titleText":"持家有道网上商城",
+                "buttons": [
+	                {
+	                    "float": "right",
+	                    "fontSize": "27px",
+	                    "fontSrc": "__wap2app.ttf",//wap2app内置字体文件
+	                    "text": "\ue650",
+	                    "onclick": "javascript:plus.webview.getLaunchWebview().loadURL('http://m.chijiayd.com')"
+	                }
+	            ],
+	            "autoBackButton": false
+            },
+            "statusbar": {
+                //系统状态栏样式(前景色)
+                "style": "dark",
+                "background": "#f7f7f7"
+            },
+            "appendCss": "",
+            "appendJs": ""
+        },
+        "easyConfig": {}
+    },
+    "pages": [
+        {
+            "webviewId": "__W2A__m.chijiayd.com",//首页
+            "matchUrls": [
+                {
+                    "href": "http://m.chijiayd.com"
+                }, {
+                    "href": "http://m.chijiayd.com/"
+                }
+            ],
+            "webviewParameter": {
+                "titleNView": false,
+                "statusbar": {
+	                "background": "#f7f7f7"
+	            }
+            }
+        }
+    ]
+}
